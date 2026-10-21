@@ -1,0 +1,34 @@
+{
+  "cameras": [
+    {
+      "id": "cam_001",
+      "name": "Entrada - Loja Matriz",
+      "store_id": "store_001",
+      "rtsp_url": "rtsp://usuario:senha@ip_da_camera:554/stream",
+      "position_x": 0,
+      "position_y": 2.5,
+      "position_z": 0,
+      "rotation_y": 0
+    },
+    {
+      "id": "cam_002",
+      "name": "Caixa - Loja Matriz",
+      "store_id": "loja_001",
+      "rtsp_url": "rtsp://usuario:senha@ip_da_camera:554/stream",
+      "position_x": 5,
+      "position_y": 3,
+      "position_z": -3,
+      "rotation_y": 45
+    }
+  ],
+  "stores": [
+    {
+      "id": "loja_001",
+      "name": "FarmaVisão - Matriz",
+      "city": "Fortaleza",
+      "address": "Av. Principal, 123",
+      "floor_plan_url": null,
+      "model_3d_url": null
+    }
+  ]
+}
