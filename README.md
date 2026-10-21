@@ -187,4 +187,4 @@ Este projeto é de uso interno da rede de farmácias. Entre em contato para info
 
 ---
 
-Desenvolvido com ❤️ para farmácias do Ceará.
+Desenvolvido por Eduardo Dourado para SB Farma.
