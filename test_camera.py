@@ -16,14 +16,16 @@ if not cap.isOpened():
 
 print("Camera conectada!")
 print("   Pressione 'q' para sair.")
+print("   Arraste a borda da janela para redimensionar.")
+
+# Nome da janela para poder controlar o tamanho
+cv2.namedWindow("Synapse 3D - Teste Camera CAM 4", cv2.WINDOW_NORMAL)
+cv2.resizeWindow("Synapse 3D - Teste Camera CAM 4", 1280, 720)  # tamanho inicial
 
 while True:
     ret, frame = cap.read()
     if not ret:
         break
-
-    # ROTACIONAR PARA RETRATO (90 graus no sentido horario)
-    frame = cv2.rotate(frame, cv2.ROTATE_90_CLOCKWISE)
 
     resultado = processor.process_frame("cam_001", frame)
 
@@ -33,7 +35,7 @@ while True:
         cv2.putText(frame, f"Pessoa {det['confidence']:.2f}", (x1, y1-10),
                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
 
-    cv2.imshow("Synapse 3D - Teste Camera CAM 4 (Retrato)", frame)
+    cv2.imshow("Synapse 3D - Teste Camera CAM 4", frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
