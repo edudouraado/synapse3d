@@ -22,6 +22,9 @@ while True:
     if not ret:
         break
 
+    # ROTACIONAR PARA RETRATO (90 graus no sentido horario)
+    frame = cv2.rotate(frame, cv2.ROTATE_90_CLOCKWISE)
+
     resultado = processor.process_frame("cam_001", frame)
 
     for det in resultado["detections"]:
@@ -30,7 +33,7 @@ while True:
         cv2.putText(frame, f"Pessoa {det['confidence']:.2f}", (x1, y1-10),
                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
 
-    cv2.imshow("Synapse 3D - Teste Camera CAM 4", frame)
+    cv2.imshow("Synapse 3D - Teste Camera CAM 4 (Retrato)", frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
