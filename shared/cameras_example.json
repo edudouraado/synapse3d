@@ -2,31 +2,21 @@
   "cameras": [
     {
       "id": "cam_001",
-      "name": "Entrada - Loja Matriz",
+      "name": "CAM 4 - Teste",
       "store_id": "store_001",
-      "rtsp_url": "rtsp://usuario:senha@ip_da_camera:554/stream",
+      "rtsp_url": "rtsp://suporteti:root%259893@192.168.10.111:554/cam/realmonitor?channel=4&subtype=0",
       "position_x": 0,
       "position_y": 2.5,
       "position_z": 0,
       "rotation_y": 0
-    },
-    {
-      "id": "cam_002",
-      "name": "Caixa - Loja Matriz",
-      "store_id": "store_001",
-      "rtsp_url": "rtsp://usuario:senha@ip_da_camera:554/stream",
-      "position_x": 5,
-      "position_y": 3,
-      "position_z": -3,
-      "rotation_y": 45
     }
   ],
   "stores": [
     {
       "id": "store_001",
-      "name": "Synapse 3D - Matriz",
+      "name": "Loja Teste",
       "city": "Fortaleza",
-      "address": "Av. Principal, 123",
+      "address": "Endereço de teste",
       "floor_plan_url": null,
       "model_3d_url": null
     }
