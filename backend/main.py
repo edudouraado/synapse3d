@@ -1,4 +1,4 @@
-"""Ponto de entrada da API FarmaVisão 360"""
+"""Ponto de entrada da API Synapse 3D"""
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -8,15 +8,6 @@ app = FastAPI(
     description="Sistema de visão computacional para rede de farmácias",
     version="1.0.0",
 )
-
-
-@app.get("/")
-async def root():
-    return {
-        "message": "Synapse 3D API",
-        "status": "online",
-        "version": "1.0.0",
-    }
 
 # Configurar CORS para o frontend
 app.add_middleware(
@@ -31,7 +22,7 @@ app.add_middleware(
 @app.get("/")
 async def root():
     return {
-        "message": "FarmaVisão 360 API",
+        "message": "Synapse 3D API",
         "status": "online",
         "version": "1.0.0",
     }

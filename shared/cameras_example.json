@@ -13,7 +13,7 @@
     {
       "id": "cam_002",
       "name": "Caixa - Loja Matriz",
-      "store_id": "loja_001",
+      "store_id": "store_001",
       "rtsp_url": "rtsp://usuario:senha@ip_da_camera:554/stream",
       "position_x": 5,
       "position_y": 3,
@@ -23,8 +23,8 @@
   ],
   "stores": [
     {
-      "id": "loja_001",
-      "name": "FarmaVisão - Matriz",
+      "id": "store_001",
+      "name": "Synapse 3D - Matriz",
       "city": "Fortaleza",
       "address": "Av. Principal, 123",
       "floor_plan_url": null,
