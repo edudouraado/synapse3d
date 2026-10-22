@@ -9,7 +9,7 @@ import os
 
 
 class VideoProcessor:
-    def __init__(self, model_path: str = "yolov8n.pt", confidence: float = 0.5):
+    def __init__(self, model_path: str = "yolov8s.pt", confidence: float = 0.3):
         self.model = YOLO(model_path)
         self.confidence = confidence
         self.heatmap_accumulator: Dict[str, np.ndarray] = {}
